@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300, 700, 900');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.disappear{
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:  black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(138, 90, 0);
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: rgb(197, 192, 192);
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url(../img/afroprint2.jpg);
+    background-position: center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    max-width:100%;
+    height: auto;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.clearfix::after, section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* typography */
+h1{
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-top: 0;
+}
+p{
+    line-height: 1.4;
+}
+.title{
+    font-size: 2.5rem;
+}
+
+.title span{
+    font-weight: 300;
+    display:block;
+    font-size: 1.3rem;
+}
+
+@media( min-width : 60rem ){
+    .title{
+        font-size: 3.7rem;
+    }
+    .title span{
+        font-size: 2.5rem;
+    }
+}
+
+/*buttons */
+.button{
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em .75em;
+    margin-top: 4px;
+    display: inline-block;
+}
+.button-accent{
+    color: rgb(138, 90, 0);
+    border-color: rgb(138, 90, 0);
+}
+.button-small{
+    font-size: .6rem;
+    font-weight: 700;
+}
+.button-accent:hover, .button-accent:focus{
+    background:rgb(138, 90, 0);
+    color: rgb(114, 114, 114);
+}
+
+@media( min-width: 60rem ){
+    .button{
+        font-size: 1.5rem;
+    }
+}
+
+/* header */
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+header h1{
+    font-family: 'Lobster', sans-serif;
+    color: rgb(138, 90, 0);
+    font-size: 2.5em;
+    margin-top: .4em;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a{
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    padding: .5em;
+    color: rgb(114, 114, 114);
+}
+
+nav a:hover, nav a:focus{
+    color:rgb(138, 90, 0);
+}
+
+@media( min-width: 60rem){
+    header h1{
+        float:left;
+        margin-left: 1em;
+    }
+    header nav{
+        float: right;
+        margin-top: 1.3em;
+    }
+}
+
+/*hero-home*/
+
+.home-hero{
+    background-image: url(../img/afroprint7.jpg);
+    background-size: cover;
+    background-position:center;
+    padding: 10em 0;
+    color: rgb(114, 114, 114);
+}
+
+@media( min-width: 60rem) {
+    .home-hero{
+        height: 100vh;
+        padding-top: 45vh;
+    }
+}
+
+/* home-about */
+.home-about-textbox{
+    background-color: black;
+    padding: 4em;
+    width: 100vw;
+    color: white;
+    margin-left: -2.5%;
+    outline: 2px solid rgb(138, 90, 0);
+    outline-offset: -2.5em;
+    position: relative;
+}
+.home-about-textbox h1{
+    color:rgb(138, 90, 0);
+    position: absolute;
+    top: .75em;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 .25em;
+    background-color: black;
+}
+
+@media( min-width: 25rem){
+    .h1{
+        font-size: 2rem;
+    }
+    .home-about-textbox h1{
+        top: .6em;
+        padding: 0.325em; 
+    }
+}
+
+@media( min-width: 60rem){
+    .h1{
+        font-size: 2.25rem;
+    }
+
+    .home-about-textbox{
+        width: 30%;
+        margin-left: 10%;
+        text-align: left;
+        top: -5em;
+    }
+
+    .home-about{
+        background-image: url(../img/we-are.jpg);
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 10em;
+        box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.6);
+    }
+
+    .home-about-textbox h1{
+        top: .3em;
+        left: 3.25rem;
+        padding: 0.6em;
+        transform: translateX(0); 
+    }
+}
+
+/*portfolio */
+.portfolio{
+    margin: 3em 0 0;
+}
+.intro-some-of-our-work{
+    margin: 3em;
+    text-align: justify;
+}
+h2{
+    font-size: 2.3rem;
+}
+.intro-some-of-our-work p{
+    line-height: 1.6;
+    font-weight: 700;
+}
+.dropbtn {
+    color: rgba(138, 90, 0);
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: none;}
+
+.headings{
+    border-bottom: 2px solid rgb(138, 90, 0);
+    width: 90%;
+    margin: 0 5%;
+}
+.work-links li a{
+    color: rgba(138, 90, 0);
+    font-size: 1.2rem;
+}
+.work-section{
+    width: 80%;
+    margin: 1em 10%;
+}
+.work-section .executive img{
+    width: 25vw;
+    height: 20vw;
+    padding: 1em;
+}
+.hosting img{
+    width: 25vw;
+    height: 20vw;
+    padding: 1em;
+}
+.social{
+    position: relative;
+}
+.social .wedding{
+    width: 50vw;
+    height: 30vw;
+    padding: 1em;
+    float: right;
+    padding-right: 2.5em;
+}
+.social .wedding1{
+    width: 21vw;
+    height: 12vw;
+    margin: 1em;
+}
+.social .birthday{
+    width: 21vw;
+    height: 12vw;
+    margin: 1em;
+}
+.social .baby-shower{
+    width: 34vw;
+    height: 20vw;
+    margin: 1em;
+}
+.social .reunion{
+    width: 35vw;
+    height: 20vw;
+    margin: 1em;
+}
+.social .bridal-shower{
+    width: 72vw;
+    height: 40vw;
+    margin: 1em;
+}
+
+@media( max-width: 60rem){
+    .work-section{
+        width: 100%;
+        margin: 0 0 1em;
+    }
+    .work-section .executive img{
+        padding-bottom: 5px;
+        width: 85vw;
+        height: 45vw;
+    }
+    .social .wedding1{
+        width: 35vw;
+        height: 15vw;
+        float: left;
+        padding-left: 2rem;
+        margin: 0;
+    }
+    .social .birthday{
+        width: 34vw;
+        height: 15vw;
+        float: left;
+        padding-left: 2rem;
+        margin: 1em 0;
+    }
+    .social .bridal-shower{
+        width: 85vw;
+        height: 47vw;
+        margin: 0;
+    }
+    .social .reunion{
+        width: 40vw;
+        height: 24vw;
+        margin: .5em;
+    }
+    .social .baby-shower{
+        width: 40vw;
+        height: 24vw;
+        margin: .5em;
+    }
+    .social .wedding{
+        width: 65vw;
+        height: 45vw;
+        padding: 1.75em;
+    }
+}
+
+/*Cta */
+
+.cta{
+    background-color: rgb(138, 90, 0);
+    padding: 3em 0;
+    color: black;
+}
+
+/*footer */
+.footer{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.span-1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.span-3{
+    padding-top: 2em;
+}

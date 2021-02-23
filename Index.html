@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+        function executive(){
+            document.getElementById('hosting').className = "hosting disappear";
+            document.getElementById('social').className = "social disappear";
+            document.getElementById('executive').className = "executive";
+        }
+        function social(){
+            document.getElementById('hosting').className = "hosting disappear";
+            document.getElementById('executive').className = "executive disappear";
+            document.getElementById('social').className = "social";
+        }
+        function hosting(){
+            document.getElementById('hosting').className = "hosting";
+            document.getElementById('executive').className = "executive disappear";
+            document.getElementById('social').className = "social disappear";
+        }
+    </script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Afrotrace Kenya</title>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+     </head>
+
+     <body>
+         <header>
+            <h1>Afrotrace</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+         </header>
+
+         <section class="home-hero">
+            <div class="container">
+                <h1 class="title">
+                    Hosting some of the best events
+                    <span>for some of the best people</span> 
+                </h1>
+                <a href="#" class="button button-accent">See Our Work</a>
+            </div>
+         </section>
+
+        <div class="container">
+            <section class="home-about">
+                <div class="home-about-textbox">
+                    <h1>Who We Are</h1>
+                    <p>We are an event hosting company ready and willing to assist you, in planning for your next get together with your friends.
+                        Whether it's the catering, venue or advertising, you better beleive we have got you covered dear friend. I know what you're thinking.
+                        That we are tied specifically to youth based parties. Well, no, we host all kinds of events. Whether it's a wedding or even celebrating 
+                        your son's rite of passage into manhood. We do it all.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+         <section class ="portfolio">
+             <h1 style="color:rgb(138,90, 0);font-size: 2.5rem;">Some Of Our Work</h1>
+             <div class="intro-some-of-our-work">
+                <p class="starting-text">&nbsp; &nbsp; &nbsp; As an event company we deal with both planning and hosting. With hosting,
+                    we focus on teaching the youth of today to reach back to the roots of African culture. Provide 
+                    them with an inspiration of sorts to actually invest into learning about their cultures. You know,
+                    actually make them want to learn their mother tongues. However, you're here in search of an event planning 
+                    organisation and we are here to be just that. We work on both executive and social events. Whether team building,
+                    seminars and conferences, product launch events, board meetings, weddings, personal milestones, bridal and baby showers, 
+                    birthdays, family reunions, day events you name it.
+                </p>
+             </div>
+             <div class="headings">
+                <nav>
+                    <ul class="work-links">
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">PLANNING</button>
+                                <div class="dropdown-content">
+                                  <a onclick="social();">Social</a>
+                                  <a onclick="executive();">Executive</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick="hosting();"><a>Hosting</a></li>
+                    </ul>
+                </nav>
+             </div>
+             <div class="work-section">
+                 <div class="executive disappear" id="executive">
+                    <img src="./img/exec1.jfif" alt="">
+                    <img src="./img/exec5.jfif" alt="">
+                    <img src="./img/exec3.jfif" alt="">
+                    <img src="./img/exec4.jfif" alt="">
+                    <img src="./img/exec2.jfif" alt="">
+                    <img src="./img/exec6.jfif" alt="">
+                 </div>
+                 <div class="social" id="social">
+                    <img class="birthday" src="./img/birthday.jfif" alt="">
+                    <img class="wedding" src="./img/wedding1.jfif" alt="">
+                    <img class="wedding1" src="./img/wedding2.jfif" alt="">
+                    <img class="baby-shower" src="./img/baby-shower.jpg" alt="">
+                    <img class="reunion" src="./img/reunion.jfif" alt="">
+                    <img class="bridal-shower" src="./img/bridal.jpeg" alt="">
+                 </div>
+                 <div class="hosting disappear" id="hosting">
+                    <img src="./img/apc.jpeg" alt="">
+                    <img src="./img/apc1.jpg" alt="">
+                    <img src="./img/apc2.jpg" alt="">
+                 </div>
+             </div>
+         </section>
+
+        <section class="cta">
+            <div class="container">
+                <h1 class="title">
+                    Like What You See?
+                    <span>Then what are you waiting for?</span>
+                </h1>
+                <a href="" class="button" style="color:black;border-color: black;">Hire us</a>
+            </div>
+        </section>
+
+        <section class="footer">
+            <footer>
+                <div class="span-3">
+                    <p>Our Twitter handle is <strong>@afrotrace.ke</strong> and our Instagram handle
+                        is <strong> @afrotrace.ke </strong>. We also have a YouTube channel where we post the various videos taken during our events.
+                        <strong> AFROTRACE.</strong> Go and watch them to get a more personalised perspective of our work. We also post a few of those videos
+                        on Facebook <strong> @afrotrace.</strong>To contact us directly call <strong>254743790194</strong>
+                    </p>
+                </div>
+
+                <div class="span-1">
+                    <ul style="list-style-type: none; padding:2em;">
+                        <li><strong>Shoreditch</strong></li>
+                        <li>Shoreditch</li>
+                        <li>Woke Retro</li>
+                        <li>Ready Made</li>
+                        <li>Scenester</li>
+                    </ul>
+                    <ul style="list-style-type: none; padding:2em;">
+                        <li><strong>Shoreditch</strong></li>
+                        <li>Shoreditch</li>
+                        <li>Woke Retro</li>
+                        <li>Ready Made</li>
+                        <li>Scenester</li>
+                    </ul>
+                    <ul style="list-style-type: none; padding:2em;">
+                        <li><strong>Shoreditch</strong></li>
+                        <li>Shoreditch</li>
+                        <li>Woke Retro</li>
+                        <li>Ready Made</li>
+                        <li>Scenester</li>
+                    </ul>
+                </div>
+            </footer>
+        </section>
+         
+     </body>
+</html>
